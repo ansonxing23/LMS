@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Creat by Anson Xing 2014/03/30-->
+<html>
+<head>
+    <title>Article Input</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/autosize.js"></script>
+    <script type="text/javascript">
+		
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div id="progBar" class="progress progress-striped active">
+		  <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+		  </div>
+		</div>
+		<div class="alert alert-warning alert-dismissable">
+		</div>
+	
+      <!-- Main component for a primary marketing message or call to action -->
+      <div>
+      	<div class="row">
+      		<div class="col-lg-8">
+	      		<h4>Select the domain:</h4>
+      		</div>
+	        <div id="domainOpt" class="col-lg-4">
+	        </div>
+      	</div>
+		<div style="margin-top: 15px">
+			<div class="one_half">
+				<div class="form-group">
+					<div class="btn-toolbar">
+				        <div id="souLanBtg" class="btn-group" data-toggle="buttons">
+				        </div>
+				        <div class="btn-group">
+					        <button type="button" onclick="TranslateService.lanDetect()" class="btn btn-info">Auto</button>
+				        </div>
+					</div>
+					<!-- <div style="position: absolute;width: 100%;height: 34px;padding: 6px 12px;    padding-top: 6px;    padding-right-value: 12px;    padding-bottom: 6px;    padding-left-value: 12px;    padding-left-ltr-source: physical;    padding-left-rtl-source: physical;    padding-right-ltr-source: physical;    padding-right-rtl-source: physical;font-size: 14px;word-wrap: break-word;height: auto;-moz-box-sizing: border-box;">I am a boy</div> -->
+			        <div class="source-clean">
+						<span class="glyphicon glyphicon-remove"></span>
+			        </div>
+					<div class="form-control source-layer"></div>
+					<textarea id="sentence" class="form-control trans-area animated" rows="3"></textarea>
+				</div>
+			</div>
+			<div class="one_half_last">
+				<div class="form-group">
+			        <div id="tarLanBtg" class="btn-group" data-toggle="buttons">
+			        </div>
+			        <button id="transBtn" type="button" onclick="TranslateService.translate()" data-loading-text="Loading..." class="btn btn-primary transbtn">Translate</button>
+					<div id="result" class="form-control trans-area trans-reslut-area">
+						<div class="result-hl"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+      </div>
+	</div>
+</body>
+</html>
